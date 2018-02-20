@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RealmDatabase</string>
+    <string name="your_phone">Your Phone..</string>
+    <string name="your_gmail">Your Gmail..</string>
+    <string name="your_name">Your Name..</string>
+    <string name="your_home_address">Your Home Address..</string>
+</resources>

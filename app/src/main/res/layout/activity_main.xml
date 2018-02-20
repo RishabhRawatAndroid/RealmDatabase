@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapp.rishabhrawat.realmdatabase.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/namelayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phonelayout"
+        android:layout_below="@+id/namelayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_phone"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/gmaillayout"
+        android:layout_below="@+id/phonelayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_gmail"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/addresslayout"
+        android:layout_below="@+id/gmaillayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_home_address"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/addresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/insert"
+            android:text="INSERT"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/update"
+            android:text="UPDATE"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/delete"
+            android:text="DELETE"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/retrive"
+            android:text="RETRIVE"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/linear">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear">
+
+        <EditText
+            android:id="@+id/showdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>
